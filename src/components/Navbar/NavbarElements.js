@@ -9,18 +9,21 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem 1rem;
   z-index: 10;
+  background: transparent;
 `;
 
 export const NavLink = styled(Link)`
-  color: #fff;
+  color: #000;
   font-weight: 500;
   display: flex;
   align-items: center;
+  font-family: Lato;
   text-decoration: none;
   margin: 1rem;
   margin-bottom: 0.5px
   height: 100%;
   cursor: pointer;
+  justify-content: space-between;
 
   &:hover {
     color: #6a040f;
@@ -46,7 +49,7 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-
+  justify-content: space-between;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -64,8 +67,9 @@ export const NavBtnLink = styled(Link)`
   border-radius: 10px;
   background: white;
   padding: 10px 22px;
-  color: #a4161a;
+  color: #000;
   border: none;
+  font-family: Lato;
   font-weight: 700;
   outline: none;
   cursor: pointer;
