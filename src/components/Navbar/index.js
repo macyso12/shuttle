@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import {
   Nav,
@@ -7,36 +7,44 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
-} from './NavbarElements';
+} from "./NavbarElements";
+
+import Logo from "../../images/logo.png";
 
 const Navbar = () => {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "#800000",
+        alignItems: "center",
+        flex: 1,
+        alignSelf: "center",
+        justifyContent: "center",
+        flexDirection: "row",
+      }}
+    >
       <Nav>
-        <NavLink to="/" style={{backgroundColor: '#C4C4C4'}}>
-          <h1
+        <NavLink to="/">
+          <img
+            src={Logo}
+            alt="Shuttle Logo"
             style={{
-              fontSize: 20,
-              padding: '10px',
-              backgroundColor: '#C4C4C4',
-              borderRadius: '10%',
+              height: "150%",
+              backgroundColor: "transparent",
+              marginTop: "40%",
             }}
-          >
-            Shuttle
-          </h1>
+          />
         </NavLink>
-
-        <Bars />
 
         <NavMenu>
           <input
             type="text"
             placeholder="Search..."
             style={{
-              boxShadow: '4px 3px 10px rgb(0 0 0 / 0.2)',
-              borderRadius: '5px',
-              minWidth: '40rem',
-              marginRight: '20px',
+              boxShadow: "4px 3px 10px rgb(0 0 0 / 0.2)",
+              borderRadius: "5px",
+              minWidth: "40rem",
+              marginRight: "20px",
             }}
           />
 
@@ -45,9 +53,6 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/clubs" activeStyle>
             Clubs
-          </NavLink>
-          <NavLink to="/account" activeStyle>
-            Account
           </NavLink>
 
           <NavBtn>

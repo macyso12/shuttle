@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import {NavLink as Link} from 'react-router-dom';
-import {FaBars} from 'react-icons/fa';
+import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: #ba181b;
+  background: #800000;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0.5rem 1rem;
   z-index: 10;
   background: transparent;
@@ -15,19 +15,22 @@ export const Nav = styled.nav`
 export const NavLink = styled(Link)`
   color: #000;
   font-weight: 500;
+  font-size: 12px;
   display: flex;
   align-items: center;
   font-family: Lato;
   text-decoration: none;
+  background-color:#800000;
   margin: 1rem;
   margin-bottom: 0.5px
   height: 100%;
   cursor: pointer;
   justify-content: space-between;
+    color: #ffffff;
 
   &:hover {
-    color: #6a040f;
-    border-bottom: 2px solid #6a040f;
+    color: #FF5454;
+    border-bottom: 2px solid #FF5454;
   }
 `;
 
@@ -49,6 +52,8 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
+  background-color: #800000;
+
   justify-content: space-between;
   @media screen and (max-width: 768px) {
     display: none;
@@ -58,6 +63,9 @@ export const NavMenu = styled.div`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+  font-size: 12px;
+  box-shadow: 4px 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
   margin-right: 24px @media screen and (max-width: 768px) {
     display: none;
   }
@@ -78,8 +86,8 @@ export const NavBtnLink = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #df8080;
-    color: black;
+    background-color: #ff5454;
+    color: white;
   }
 
   @media screen and (max-width: 768px) {
